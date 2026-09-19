@@ -1,0 +1,47 @@
+
+#container {
+    display: grid;
+    width: 100%;               /* 1. Allows container to shrink on mobile */
+    max-width: 675px;
+    min-height: 700px;         /* 2. Replaced fixed height with min-height */
+    height: auto;              /* 3. Lets it grow if content spills over */
+    border: solid 1px black;
+    justify-self: center;
+    text-align: left;
+    justify-items: center;
+    margin: 0;
+    box-sizing: border-box;    /* 4. Keeps border inside the width calculation */
+}
+
+
+img{
+    max-width: 85px;
+    padding: 25px;
+}
+p{
+    margin: 0;
+}
+li{
+    padding: 5px;
+    margin: 0;
+}
+#italic-text{
+    justify-self: left;
+    font-style: italic;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+#main-body{
+ padding: 0 125px 0px 125px;
+}
+
+h2 {
+    color: #006EB6;
+    font-size: medium;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    border-bottom: solid 1.5px rgba(0, 0, 0, 0.057);
+    margin: 0 -75px 15px -75px; 
+    padding: 0 75px 0 75px; 
+}
