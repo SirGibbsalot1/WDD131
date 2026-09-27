@@ -11,10 +11,11 @@
     justify-items: center;
     margin: 0;
     box-sizing: border-box;    /* 4. Keeps border inside the width calculation */
+
 }
 
 
-img{
+#byui-logo{
     max-width: 85px;
     padding: 25px;
 }
