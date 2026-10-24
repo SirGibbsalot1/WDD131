@@ -63,7 +63,7 @@ footer {
     }
      .book{
         display: grid;
-        grid-template-columns: 113px auto;
+        grid-template-columns: 135px auto;
      }
 
      .book-info {
