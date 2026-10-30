@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Playground</title>
+</head>
+<body>
+    <form>
+        <label for ssn>Enter your social security number</label>
+        <input id="ssn" type="text" placeholder="###-##-####" name="ssn"  required maxlength="9" minlength="9">
+
+        <input type="search" name="search">
+        <!-- regex in pattern tag requires certain characaristics from the entered password -->
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+        <input type="tel">
+
+        <input type="color">
+
+        <input type="file">
+
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+
+        <input type="submit" value="words">
+    </form>
+</body>
+</html>
