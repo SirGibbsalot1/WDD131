@@ -32,10 +32,10 @@ function updateNotesField() {
 
 };
 
-function studentNumInvalid() {
-  const studentNum = document.querySelector("#student-num");
-  return !studentNum || !/^\d{9}$/.test(studentNum.value);
-}
+// function studentNumInvalid() {
+//   const studentNum = document.querySelector("#student-num");
+//   return !studentNum || !/^\d{9}$/.test(studentNum.value);
+// }
 
 // function guestCodeInvalid(){
 
@@ -49,17 +49,24 @@ updateNotesField();
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  if (form.type.value === "student" && studentNumInvalid()) {
-    output.textContent = "Error: please enter exactly 9 digits for a student ID.";
-    return;
+  if(form.type.value == "student" ){
+    const studentID = document.querySelector("#student-num");
+
+    if (studentID.value.length > 9 || studentID.value.length < 9) {
+      output.textContent = "Error: please enter exactly 9 digits for a student ID.";
+      return;
   }
 
-    const guestCode = document.querySelector("#access-code");
-    if (guestCode.value != "EVENT131") {
-        output.textContent = "Error: not a valid access code"
-        return;
-    }
+  }
 
+    if (form.type.value == "guest") {
+
+      const guestCode = document.querySelector("#access-code");
+      if (guestCode.value != "EVENT131") {
+          output.textContent = "Error: not a valid access code"
+          return;
+      }
+  }
   output.textContent = "";
 
   const firstName = form.firstName.value.trim();
