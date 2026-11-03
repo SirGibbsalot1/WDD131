@@ -28,6 +28,9 @@ function updateNotesField() {
 
     };
 
+    if(type.value=="") {
+      document.querySelector(".type-box").style.display = "none";
+    }
 
 
 };
