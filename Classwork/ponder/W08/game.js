@@ -22,15 +22,15 @@ function setDieImages(imagePath) {
     });
 }
 
-// function yahtsee() {
+// function yahtzee() {
 //     let dice = document.querySelectorAll("#gameboard img")
 //     dice.src.forEach(die =>{
 //         let index = 0;
 //         if (die[index] == die[index+1]){
 //             index += 1
 //             if (index == 5){
-//                 document.querySelector("#yahtsee-message").textContent = `YAHTSEE!!`;
-//                 console.log("YAHTSEE!")
+//                 document.querySelector("#yahtsee-message").textContent = `YAHTZEE!!`;
+//                 console.log("YAHTZEE!")
 //         }
 //         };
 
