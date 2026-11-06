@@ -12,7 +12,8 @@ characterInformationObject = {
         characterInformationObject.health = characterInformationObject.health - 20;
         displayCharacterInformation();
         if (characterInformationObject.health <= 0){
-            setTimeout( ()=>{alert("Character Died"), characterInformationObject.health = 100, displayCharacterInformation()}, 0);
+            setTimeout( ()=>{alert("Character Died"), characterInformationObject.health = 100
+                ,characterInformationObject.level = 1, displayCharacterInformation()}, 0);
         };
 
 
