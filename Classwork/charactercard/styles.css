@@ -1,0 +1,75 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    justify-items: center;
+    
+}
+
+#card-container {
+    max-width: 400px;
+    display: block;
+    margin: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(96, 89, 89);
+    box-shadow: 4px 4px 10px 0 black;
+}
+
+
+#card-container img {
+    width: 400px;
+    height: auto;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+h1{
+    padding: 0 0 0 15px;
+    margin: 0;
+    background-color: rgb(56, 61, 75);
+    color: white;
+    
+}
+
+p {
+    color: white;
+    margin: 5px 0 15px 15px;
+    
+}
+
+#buttons {
+    justify-self: center;
+}
+
+#attacked {
+        margin: 0 10px 15px 10px;
+        background-color: rgb(57, 57, 65);
+        border-radius: 5px;
+        border: none;
+        color: white;
+        height: 30px;
+        font-weight: 700;
+        
+}
+
+#level-up {
+        margin: 0 10px 0 10px;
+        background-color: rgb(57, 57, 65);
+        border-radius: 5px;
+        border: none;
+        color: white;
+        height: 30px;
+        font-weight: 700;
+}
+
+#attacked:hover {
+    background-color: rgb(72, 72, 82);
+}
+
+#level-up:hover {
+    background-color: rgb(72, 72, 82);
+}

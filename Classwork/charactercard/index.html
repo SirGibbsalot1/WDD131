@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+
+
+  <!-- 1. Tell the browser to fetch the CSS as a low-priority 'print' stylesheet so it doesn't block rendering -->
+  <link rel="stylesheet" href="/charactercard/styles.css" media="print" onload="this.media='all'">
+  
+  <!-- 2. Fallback for browsers with JavaScript disabled -->
+  <noscript><link rel="stylesheet" href="/charactercard/styles.css"></noscript>
+
+
+
+    <script src="main.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <meta property="og:title" content="Character Card" />
+    <meta property="og:description" content="A simple dynamic webpage to practice JS" />
+    <meta property="og:image" content="images\android-chrome-512x512.png" />
+    <meta property="og:url" content="sirgibbsalot1.github.io/WDD131/Classwork/charactercard/index.html" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="images\android-chrome-512x512.png" />
+    <meta name="twitter:title" content="Mr. Snortleblat" />
+    <meta name="twitter:description" content="A simple dynamic webpage to practice JS" />
+    <meta name="twitter:image" content="images\snortleblat.webp" />
+</head>
+
+<body>
+    
+    <main>
+        <article id="card-container">
+            <section id="character-information"></section>
+            <div id="buttons">
+                <button id="attacked">Attacked</button>
+                <button id="level-up">Level Up</button>
+            </div>
+        </article>
+    </main>
+
+</body>
+
+</html>
