@@ -6,13 +6,10 @@
     <title>Character Card</title>
 
 
-  <!-- 1. Tell the browser to fetch the CSS as a low-priority 'print' stylesheet so it doesn't block rendering -->
-  <link rel="stylesheet" href="/charactercard/styles.css" media="print" onload="this.media='all'">
+  <!-- REMOVED THE LEADING SLASH BEFORE 'charactercard' -->
+  <link rel="stylesheet" href="charactercard/styles.css" media="print" onload="this.media='all'">
   
-  <!-- 2. Fallback for browsers with JavaScript disabled -->
-  <noscript><link rel="stylesheet" href="/charactercard/styles.css"></noscript>
-
-
+  <noscript><link rel="stylesheet" href="charactercard/styles.css"></noscript>
 
     <script src="main.js" defer></script>
 
