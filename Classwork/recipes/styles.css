@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    padding: 10px;
+}
+
+main{
+    min-width: 90%;
+    justify-items: center;
+}
+
+header img {
+    max-width: 100px;
+}
+
+#logo {
+    display: flex;
+    padding: 10px;
+}
+#search-bar{
+    max-height: 30px;
+
+      position: relative;
+  display: inline-block;
+}
+
+#search-bar img {
+      position: absolute;
+  left: right 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+#search-bar input {
+    padding-right: 34px;
+}
+#apple-crisp {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin: 15px 0 15px 0;
+}
+#card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border: black solid 1px;
+    border-radius: 6px;
+    padding: 0px 15px 15px 30px;
+}
+
+#dessert-button {
+    max-width: 70px;
+
+}
+
+#recipe-info p {
+    display: none;
+}
+
+.social {
+    margin: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.social img{
+ width: 25px;
+ height: auto;
+ margin: 0 3px 0 3px;
+}
+
+@media screen and (min-width:600px) {
+    #recipe-info{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        margin: 5px;
+    }
+
+    #dessert-button {
+    
+    }
+
+    #recipe-info p {
+    display: block;
+    overflow-wrap: break-word;
+    }
+
+    #card-container {
+        flex-direction: row;
+        min-width: 90%;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    #apple-crisp{
+        min-height: 80%;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .rating {
+    font-size: 10px;
+    }
+    header {
+        min-width: 90%;
+        justify-items: center;
+    }
+    #search {
+        width: 90%;
+        
+    }
+    #search-bar {
+        width: 100%;
+    }
+    #search input{
+        width: 100%;
+    }
+ 
+    footer {
+        min-width: 90%;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    
+
+
+}
