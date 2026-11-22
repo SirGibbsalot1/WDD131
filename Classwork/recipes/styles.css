@@ -40,7 +40,7 @@ header img {
 #search-bar input {
     padding-right: 34px;
 }
-#apple-crisp {
+#card-container img {
     width: 90%;
     height: 90%;
     object-fit: cover;
@@ -55,7 +55,7 @@ header img {
     padding: 0px 15px 15px 30px;
 }
 
-#dessert-button {
+button {
     max-width: 70px;
 
 }
@@ -76,16 +76,12 @@ header img {
  margin: 0 3px 0 3px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
     #recipe-info{
         display: flex;
         flex-direction: column;
         justify-items: flex-start;
         margin: 5px;
-    }
-
-    #dessert-button {
-    
     }
 
     #recipe-info p {
@@ -94,16 +90,24 @@ header img {
     }
 
     #card-container {
-        flex-direction: row;
         min-width: 90%;
         padding: 10px;
         align-items: flex-start;
     }
 
-    #apple-crisp{
+    #card-container img{
         min-height: 80%;
         max-width: 400px;
         margin: 0;
+    }
+
+    .recipe-card{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        border: solid black 1px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .rating {
